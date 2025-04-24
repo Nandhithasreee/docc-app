@@ -1,49 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="1style.css"/>
-    <title>Home page</title>
-  </head>
-  <body>
-    <header>
-      <nav class="section__container nav__container">
-        <div class="nav__logo"> <i class="ri-service-line"></i>Docc<span>App</span></div>
-        <ul class="nav__links">
-          <li class="link"><a href=" http://127.0.0.1:5500/about.html">About Us</a></li>
-          <li class="link"><a href="http://127.0.0.1:5500/client.html ">Login</a></li>
-          <li class="link"> <a href="#">More</a> 
-          <div class="dropdown">
+import React from 'react';
+import "./Home.css";
+import {Link} from 'react-router-dom';
+
+const Home = () => {
+  return (
+    <div>
+      
+      <div className='header'>
+      <nav className="section__container nav__container">
+        <div className="nav__logo"> <i className="ri-service-line"></i>Docc<span>App</span></div>
+        <ul className="nav__links">
+          <li className="link"><Link to="/About">About us</Link></li>
+          <li className="link"><Link to="/Login1">Login</Link></li>
+          <li className="link"><Link to="#">More </Link> 
+          <div className="dropdown">
 <ul>
-  <li class="link"> <a href="">Register as New Client</a></li>
-  <li class="link"><a href="">Register as New Doctor</a></li>
+  <li className="link"><Link to="/Choice">Choose your Specialist</Link></li>
+  <li className="link"> <Link to="#">Register as New Doctor</Link> </li>
+  <li className="link"> <Link to="#">Register as New Client</Link> </li>
 </ul>
           </div>
           </li>
         </ul>
       </nav>
-      <div class="section__container header__container">
-        <div class="header__content">
+      <div className="section__container header__container">
+        <div className="header__content">
           <h1> Online Doctor Consultaion Platform</h1>
           <p>
             Docc app is a sleek, user-friendly web platform designed to simplify online doctor Consultation . 
               It combines functionality with ease of use, making it a reliable platform for patients 
-               seeking online consultations with healthcare professionals <br>
+               seeking online consultations with healthcare professionals <br/>
                <h2>BOOK YOUR SESSION NOW!!!</h2>
           </p>
         </div>
       </div>
-    </header>
+    </div>
 
 
-      <section class="section__container why__container" id="blog">
+    <section class="section__container why__container" id="blog">
         <div class="why__image">
-          <img src=" https://static.vecteezy.com/system/resources/previews/018/982/567/non_2x/online-doctor-consultation-via-your-smartphone-concept-png.png" alt="why choose us" />
+        <img src=" https://static.vecteezy.com/system/resources/previews/018/982/567/non_2x/online-doctor-consultation-via-your-smartphone-concept-png.png" alt="why choose us" />
         </div>
         <div class="why__content">
           <h2 class="section__header">Why Choose Us</h2>
@@ -78,10 +74,8 @@
           </div>
         </div>
       </section>
-   
 
-
-    <footer class="footer">
+      <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__col">
           <h3>Docc<span>App</span></h3>
@@ -116,5 +110,11 @@
         </div>
       </div>
     </footer>
-  </body>
-</html>
+
+
+
+    </div>
+  )
+}
+
+export default Home

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); 
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.login__form {
+  width: 100%;
+  max-width: 420px;
+  padding: 4rem 3rem;
+  margin: 1rem;
+  border: 2px solid #181f70;
+  border-radius: 1.5rem;
+  transform: translateY(50px);
+   animation: show 0.5s linear forwards; 
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login__form h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #EC8305;
+  text-align: center;
+}
+
+.input__row {
+  margin-bottom: 1.5rem;
+  padding-block: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #181f70 ;
+}
+
+.input__group {
+  flex: 1;
+  position: relative;
+  isolation: isolate;
+}
+
+.input__row span {
+  font-size: 1.25rem;
+  color:  #EC8305;
+}
+
+.input__group label {
+  position: absolute;
+  font-size: 1rem;
+  color: #EC8305 ;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input__group input:not(:placeholder-shown) ~ label,
+.input__group input:focus ~ label {
+  font-size: 0.7rem;
+  top: -1.25rem;
+}
+
+.input__group input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  color:  #EC8305;
+  background-color: transparent;
+}
+
+.forgot__password {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color:  #EC8305;
+}
+
+.forgot__password:hover {
+  color: var(--white);
+}
+
+.login__btn {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  color:#dbd3d3;
+  background-color: #181f70;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login__btn:hover {
+  background-color:#363b79;
+}
+
+.register {
+  color: #EC8305;
+  text-align: center;
+}
+
+.register a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #EC8305;
+}
+.nav__logo {
+  font-size: 5rem;
+  font-weight: 600;
+  color:  #181f70;
+  font-family: Georgia, serif;
+  padding: 8px;
+
+}
+
+.nav__logo span {
+  color:#EC8305 ;
+}
+.footer__bar {
+  background-color:#181f70  ;
+
+}
+
+.footer__bar__content {
+  max-width:max-content;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer__bar__content p {
+  font-size: 0.8rem;
+  color:white;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+  

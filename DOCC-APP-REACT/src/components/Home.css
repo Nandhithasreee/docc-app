@@ -3,7 +3,7 @@
 :root {
   --primary-color:  #181f70 ;
   --primary-color-light:#dbd3d3;
-  --secondary-color: #EC8305; 
+  --secondary-color: #EC8305;
   --text-dark: #333333;
   --text-light: #767268;
   --white: #ffffff;
@@ -35,7 +35,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header {
+.header {
   background-image: linear-gradient(
       to right,
      
@@ -49,7 +49,7 @@ header {
 }
 
 .nav__container {
-  padding: 2rem 1rem;
+  padding: 0.5px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,7 +58,7 @@ header {
 .nav__logo {
   font-size: 5rem;
   font-weight: 600;
-  color: var(--white);
+  color:var(--primary-color-lightssss);
   font-family: Georgia, serif;
 
 }
@@ -91,7 +91,8 @@ border-radius: 10px;
 .header__container {
   display: flex;
   align-items: center;
-  gap: 5rem; 
+  /* gap: 5rem;  */
+  
 }
 
 .header__container h1 {
@@ -135,10 +136,10 @@ background-color: var(  --secondary-color);
 }
 
 .why__image img {
-  max-width: 500px;
-  margin: auto;
-  border-radius: 10px;
-  margin-left: 1px;
+  width: 500px;
+  height: 550px;
+ margin-right: 60px;
+ 
 }
 
 .why__content p {
